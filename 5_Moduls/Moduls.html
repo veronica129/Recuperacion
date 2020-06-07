@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>moduls_flexbox(explicación)</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background:linear-gradient(38deg,rgb(180,110,120),purple);
+        }
+        .container{
+            width: 800px;
+            height: 600px;
+            margin: auto;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container section:nth-child(3),.container section:nth-child(4){
+            flex-grow: 1;
+        }
+        section{
+            text-align: center;
+            padding: 1em;
+            margin: 0.5em;
+            background: rgba(240,240,240,0.5);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>Ben Laposky</h1>
+        </section>
+        <section>
+            <h1>John Whitney</h1>
+        </section>
+        <section>
+            <h1>Herbert W. Franke</h1>
+        </section>
+        <section>
+            <h1>Vera Molnar</h1>
+        </section>
+    </div>
+</body>
+</html>
