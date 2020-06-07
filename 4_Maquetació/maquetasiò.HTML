@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guilles Deleuz</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --altura: 70vh;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 16px;
+        }
+        header{
+            width: 100%;
+            height: var(--altura);
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header div{
+            width: 50%;
+            height: var(--altura);
+        }
+        heaer div img{
+            position: relative;
+            width: 50%;
+            height: var(--altura);
+        }
+
+        .bloque_izq {
+            background: purple;
+        }
+
+        .bloque_izq img {
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bloque_der {
+            background: red;
+        }
+
+        .bloque_der img {
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            font-size: 5vh;
+            width: 100%;
+            color: white;
+        }
+        article {
+            font-family: 'Roboto Slab', serif;
+            width: 35.4em;
+            margin: auto;
+        }
+        article>p:first-child{
+            padding: 8vw 0;
+            color: orange;
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 1px solid orange;
+            hyphens: auto;
+            line-height: 1.4em;
+            text-align: justify;
+        }
+        article #cos{
+            text-align: justify;
+            hyphens: auto;
+            width: auto;
+            padding: 0 3em;
+            
+        }
+        article #cos>p:first-child::first-letter{
+            font-family: 'Roboto Slab', serif;
+            font-size: 5em;
+            float: left;
+            margin-top: -0.15em;
+            margin-right: 0.2em;
+            padding-bottom: 0;
+            padding-right: 0.2em;
+        }
+        article #cos p{
+            padding: 0 0 1.5em 0;
+        }
+        .circulo img, .hexagon img{
+           mix-blend-mode: hard-light;
+        }
+        .circulo, .circulo img{
+            border-radius: 50%;
+        }
+        .circulo{
+            max-width: 20em;
+            float: left;
+            margin-left: -8em;
+            shape-margin: 4em;
+            shape-outside: circle(50%) border-box;
+        }
+        .hexagon, .hexagon img{
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        .hexagon{
+            max-width: 20em;
+            float: right;
+            margin-right: -8em;
+            shape-margin: 2em;
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 12px;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bloque_izq">
+            <img src="img/libro1.jpg">
+        </div>
+        <div class="bloque_der">
+            <img src="img/libro2.jpg">
+        </div>
+       <h1>Guilles Deleuz<br>filósofo Francés</h1>
+    </header>
+    <article>
+        <p>Gilles Deleuze (París, 18 de enero de 1925-ibíd, 4 de noviembre de 1995)1 fue un filósofo francés, considerado entre los más importantes e influyentes del siglo XX. Desde 1953 hasta su muerte, escribió numerosas obras filosóficas sobre la historia de la filosofía, la política, la literatura, el cine y la pintura.</p>
+        <div id="cos">
+        <p>Entre sus libros más famosos están las monografías sobre David Hume Empirismo y subjevidad (1953), La filosofía crítica de Kant (1963), El Bergsonismo (1966), Presentación de Sacher-Masoch (1967), Proust y los signos, Spinoza y el problema de la expresión (1968), dos volúmenes de Capitalismo y esquizofrenia: Mil mesetas y El Antiedipo, ambos escritos junto con Félix Guattari; los dos libros que siguieron al mayo del 68 en París, Diferencia y repetición (1968) y Lógica del sentido (1969); sus dos libros sobre cine, Imagen movimiento e Imagen tiempo; Spinoza: Filosofía práctica (1981), En medio de Spinoza (Clases dictadas en la Universidad de Vincennes entre noviembre de 1980 y marzo de 1981), Foucault (1986) y, por último, ¿Qué es la filosofía? (1991), junto con Guattari.</p>
+        <p>Nació en 1925 en París en el seno de una familia burguesa. Su padre, Louis, era ingeniero y su madre, Oddet Camaüer, se ocupaba de la casa y sus dos hijos, Gilles y George. Sus progenitores estaban adscritos a la derecha, siendo próximos a la organización Croix de Feu. Desde temprana edad sufrió problemas respiratorios.
+        En 1940, sorprendida la familia por la Segunda Guerra Mundial durante las vacaciones en Deauville, descubrió la literatura francesa gracias a su maestro Pierre Halbwachs, hijo del sociólogo Maurice Halbwachs. De este modo leyó a Baudelaire, Gide y France.</p>
+        
+        <div class="circulo">
+        <img src="img/primera_foto.jpg" >
+        </div>
+
+        <p>Asistió al Liceo Carnot durante la Segunda Guerra Mundial. Durante la ocupación nazi su hermano mayor fue arrestado por participar en la resistencia francesa y murió cuando fue enviado a un campo de concentración. Entre 1944 y 1948, cursó estudios de filosofía en La Sorbona. Algunos de sus profesores fueron Ferdinand Alquié, Georges Canguilhem, Maurice de Gandillac y Jean Hyppolite.Deleuze enseñó en varios colegios hasta 1957, cuando comenzó a dar clases en La Sorbona. En 1953 publicó Empirismo y subjetividad, un ensayo sobre el Tratado sobre la naturaleza humana de Hume. En 1956 se casó con Denise Paul Grandjouan. Entre 1960 y 1964 trabajó en el CNRS, periodo en el que publicaría Nietzsche y la filosofía (1962) y comenzaría su amistad con Michel Foucault. De 1964 a 1969 fue profesor en la Universidad de Lyon. En 1968 publicó Diferencia y repetición y Spinoza y el problema de la expresión.</p>
+        <div class="hexagon">
+        <img src="img/segunda_foto.jpg" >
+        </div>
+
+        <p>En 1969 fue nombrado para la Universidad de París VIII, donde trabajaría hasta su retiro de la vida universitaria en 1987. Allí trabajó con Foucault y conoció a Félix Guattari, un psicoanalista heterodoxo, con el cual comenzaría una larga y fructífera colaboración, que se cristalizó en los dos volúmenes de Capitalismo y esquizofrenia: El Anti-Edipo y Mil mesetas. A raíz de esta colaboración aparece la famosa declaración de Deleuze, en la que afirma que «lo que define a un sistema político es el camino por el que su sociedad ha transitado»</p>
+
+        <p>«Un día, el siglo será deleuziano», fue la expresión de Michel Foucault en relación a un filósofo que marcó profundamente el pensamiento de la segunda mitad del siglo XX. «La filosofía es el arte de formar, de inventar, de fabricar los conceptos», dirá el propio Deleuze en Qu'est-ce que la philosophie? (¿Qué es la filosofía?).  </p>
+      <p> Dentro de la política, Deleuze es considerado un filósofo anarquista, o como un marxista en su sector más libertario. Como narró Jacques Derrida, pese a las críticas que Deleuze hizo a los marxistas, Deleuze nunca dejó de considerarse a sí mismo un marxista; además veía imposible hacer filosofía política sin centrarse en el análisis del capitalismo. [1] Al final de su vida Deleuze preparaba un escrito inconcluso titulado La grandeur de Marx. Más específicamente, su anarquía adquiere sentido cuando vemos que su obra es una lucha constante contra el poder dicotómico del arjé.   </p>
+        </div>
+    </article>
+</body>
+
+</html>
