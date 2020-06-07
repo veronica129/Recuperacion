@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MONDRIAN</title>
+    <style type="text/css">
+        :root{
+            --borde: 2px solid black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(20, 1fr);
+        }
+        
+        
+        .element{
+          border: var(--borde) 
+        }
+        .ele1{
+            background: red;
+        }
+        .ele1, .ele2, .ele3, .ele4{
+            grid-column: 4 span;
+        }
+        .ele1, .ele3, .ele4{
+            grid-row: 3 span;
+        }
+        .ele2{
+            grid-row: 6 span;
+        }
+        .ele3{
+            background: yellow;
+        }
+        .ele5{
+            grid-column: 4 span;
+            grid-row: 7 span;
+        }
+        .ele6{
+            grid-column: 8 span;
+            grid-row: 3 span;
+        }
+        .ele7{
+            grid-column: 7 span;
+            grid-row: 3 span;
+        }
+        .ele8{
+            grid-column: 2 span;
+            grid-row: 9 span;
+        }
+        .ele9{
+            grid-column: 3 span;
+            grid-row: 6 span;
+        }
+        .ele10{
+            grid-column: 7 span;
+            grid-row: 6 span;
+            background: blue;
+        }
+        .ele11{
+            grid-column: 4 span;
+            grid-row: 3 span;
+            background: yellow;
+        }
+        .ele12{
+            grid-column: 3 span;
+            grid-row: 3 span;
+        }
+        .ele13{
+            grid-column: 4 span;
+            grid-row: 5 span;
+        }
+        .ele14{
+            grid-column: 4 span;
+            grid-row: 5 span;
+            background: red;
+        }
+        .ele15{
+            grid-column: 8 span;
+            grid-row: 4 span;
+        }
+        .ele16, .ele17{
+            grid-column: 2 span;
+            grid-row: 4 span;
+        }
+        .ele18{
+            grid-column: 7 span;
+        }
+        .ele19{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element ele1"></div>
+        <div class="element ele2"></div>
+        <div class="element ele3"></div>
+        <div class="element ele4"></div>
+        <div class="element ele5"></div>
+        <div class="element ele6"></div>
+        <div class="element ele7"></div>
+        <div class="element ele8"></div>
+        <div class="element ele9"></div>
+        <div class="element ele10"></div>
+        <div class="element ele11"></div>
+        <div class="element ele12"></div>
+        <div class="element ele13"></div>
+        <div class="element ele14"></div>
+        <div class="element ele15"></div>
+        <div class="element ele16"></div>
+        <div class="element ele17"></div>
+        <div class="element ele18"></div>
+        <div class="element ele19"></div>
+         
+    </div>
+</body>
+</html>
