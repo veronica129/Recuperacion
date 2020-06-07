@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes_flexbox</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            min-height: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            font-family: "Georgia" cursive;
+            font-size: 18px;
+            background: linear-gradient(45deg,orange,rgb(140,20,200));
+            color: black;
+        }
+        .container{
+            display: flex;
+           /* flex-direction: row;*/
+            padding: 2em 4em;
+            justify-content: center;
+        }
+        .dissenyador{
+            display: flex;
+            flex-direction: column;
+            width: 25em;
+            margin: 1em;
+            background-color: rgb(240,240,240,0.6);
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgb(50,50,50);
+        }
+        .dissenyador_img{
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+            width: 100%;
+            height: 400px;
+            background: purple;
+        }
+        .dissenyador_img img{
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+            filter: grayscale(100%);
+            mix-blend-mode: lighten;
+            
+        }
+        .dissenyador:first-child .dissenyador_img img{
+            object-position: top;
+        }
+        header{
+            display: flex;
+            margin: 0.5em 1em;
+            justify-content: space-between;
+            border-bottom: 1px solid purple;
+            align-items: baseline;
+        }
+        h3{
+            font-style: italic;
+            font-weight: bold;
+        }
+        span{
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+        .dissenyador_contingut{
+            margin: 1em 1em 0.5em 1em;
+            text-align: justify;
+            flex-grow: 1;
+            hyphens: auto;
+            font-size: 0.9em;
+            line-height: 1.4em;
+        }
+        footer{
+            background: purple;
+            color: white;
+            font-size: 0.9em;
+            font-style: italic;
+            border-radius: 0 0 20px 20px;
+            padding: 0.6em;
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 14px;
+            }
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="dissenyador">
+           <div class="dissenyador_img">
+              <img src="img/Lukova_withwork.jpg" alt="Luba Lukova">
+              
+           </div>
+           <header>
+               <h3>Luba Lukova</h3>
+               <span>1980</span>
+           </header>
+           <p class="dissenyador_contingut">
+              Lukova was born in Plovdiv, Bulgaria and studied at the National Academy of Fine Arts in Sofia.[3] She moved to the United States in 1991, after traveling to participate in the Colorado International Invitational Poster Exhibition; shortly thereafter, she was hired by the New York Times Book Review and established her studio in New York City.[4] Lukova's work is exhibited around the world and has won many awards including: Grand Prix Savignac at the International Poster Salon in Paris, ICOGRADA Excellence Award, and Reisman Foundation Award. She holds an honorary doctoral degree from the Art Institute of Boston.
+
+           </p>
+           <footer class="dissenyador_peu">
+               Keep Paddling
+           </footer>
+       </div>
+       <div class="dissenyador">
+           <div class="dissenyador_img">
+               <img src="img/StefanSagmeister.jpg" alt="Stefan Sagmeister">
+           </div>
+           <header>
+               <h3>Stefan Sagmeister</h3>
+               <span>1962</span>
+           </header>
+           <p class="dissenyador_contingut">
+              Stefan Sagmeister (born August 6, 1962 in Bregenz, Austria) is a New York-based graphic designer, storyteller, and typographer. Sagmeister co-founded a design firm called Sagmeister & Walsh Inc. with Jessica Walsh in New York City. He has designed album covers for Lou Reed, OK Go, The Rolling Stones, David Byrne, Jay Z, Aerosmith and Pat Metheny.
+           </p>
+           <footer class="dissenyador_peu">
+               MAPS
+           </footer>
+       </div>
+   </div>
+    
+</body>
+</html>
