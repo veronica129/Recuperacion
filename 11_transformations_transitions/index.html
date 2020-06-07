@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transformation &amp; 
+    transition</title>
+    <style type="text/css">
+       
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .rotar{
+            transform: rotate(45deg);
+            background: pink;
+            transition: 0.5s background;
+        }
+        .rotar:hover{
+            
+            background: red;
+        }
+        h1{
+            font-size: 20px;
+            transition:10s 0.5s font-size;
+        }
+        .rotar:hover h1{
+            font-size:100px;
+        }
+        .escalar{
+            transform: scale(1.5);
+            background: azure;
+        }
+        .sesgar{
+            transform: skew(0,22.5deg);
+          background-color:bisque;
+        }
+        .traslladar{
+            transform: translate(800px,-300px);
+            transition:4s transform;
+            background-color:cadetblue;
+        }
+      .traslladar:hover{
+            transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+   <div class="rotar">
+       <h1>hola</h1>
+   </div>
+   <div class="escalar"></div>
+    <div class="sesgar"></div>
+     <div class="traslladar"></div>
+</body>
+</html>

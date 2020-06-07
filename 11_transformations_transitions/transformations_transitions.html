@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .f-1, .f-2 {
+            display: flex;
+        }
+        [class*="c-"]{
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+        }
+         .c-1 img{
+            
+        }
+        .c-1:hover{
+            border-radius:50%;
+            border-radius:50%;
+            box-shadow: 0px 0px 15px 15px #ec731e;
+            box-shadow: 0px 0px 15px 15px #ec731e;
+            transition: rotate(360deg);
+        }
+        .c-2 img{
+            transform: translate(-300px, 0);
+            opacity: 1;
+            filter: alpha(opacity=50);
+            zoom: 1;
+        }
+        .c-2:hover{
+            opacity: 0.5;
+            filter: alpha(opacity=100);
+            zoom: 1;
+        }
+        .c-3 img{
+            transform: translate(-600px, 0);
+            transition: transform 2s ease;
+            
+             }
+        .c-3:hover{
+            transform:rotate(180deg);
+        }
+        
+        .c-4 img{
+            transform:  translate(0px, -300px);
+            transition: border-radius 2s ease;
+              }
+        .c-4:hover{
+            border-radius:120px;
+        }
+        .c-5 img{
+            transform: translate(-300px,-300px);
+            
+        }
+        .c-5:hover{
+            transform:scale(2);
+
+        }
+        .c-6 img{
+            transform: translate(-600px,-300px);
+            transition:filter: blur(5px);
+        }
+         .c-6:hover{
+             filter: blur(5px);
+
+        }
+         
+    </style>
+</head>
+<body>
+   <div class="container">
+   <div class="f-1">
+    <div class="c-1">
+        <img src="img/paisaje.jpg" alt="">
+    </div>
+    <div class="c-2">
+        <img src="img/paisaje.jpg" alt="">
+    </div>
+    <div class="c-3">
+        <img src="img/paisaje.jpg" alt="">
+    </div>
+    </div>
+    <div class="f-2">
+    <div class="c-4">
+        <img src="img/paisaje.jpg" alt="">
+    </div>
+    <div class="c-5">
+        <img src="img/paisaje.jpg" alt="">
+    </div>
+    <div class="c-6">
+        <img src="img/paisaje.jpg" alt="">
+    </div>
+    </div>
+    </div>
+</body>
+</html>
