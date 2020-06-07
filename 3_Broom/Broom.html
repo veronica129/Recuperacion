@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Broom</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face{
+            font-family: "BungeeShade-Regular";
+
+            src:
+                url("fonts/BungeeShade-Regular.svg"),
+                url("fonts/BungeeShade-Regular.ttf"),
+                url("fonts/BungeeShade-Regular.woff"),
+                url("fonts/BungeeShade-Regular.woff2");
+        }
+        @font-face{
+            font-family: "Lora-Bold";
+            src:
+                url("fonts/Lora-Bold.svg"),
+                url("fonts/Lora-Bold.ttf"),
+                url("fonts/Lora-Bold.woff"),
+                url("fonts/Lora-Bold.woff2");
+        }
+
+        body{
+            font-family: "BungeeShade-Regular";
+            background-color:burlywood;
+        }
+       
+        div[title="b"]{
+            position: absolute;
+            font-size: 200px;
+            top: 0px;
+            left: 5%;
+            color: red;
+        }
+        div[title="vol_"]{
+            font-family: "Lora-Bold";
+            position: absolute;
+            width: 150px;
+            height:100px;
+            left: 45%;
+            top: 150px;
+            color: red;
+        }    
+        div[title="vol_"]
+        p:first-child{
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            color: red;
+            
+        }
+        div[title="vol_"]
+        p:last-child{
+            position: absolute;
+            font-size: 140px;
+            top: 0px;
+            right: 0;
+            color: red;
+        }
+        div[title="b reverse"]{
+            position: absolute;
+            font-size: 200px;
+            top: 25px;
+            right: 5%;
+            transform: rotate(180deg);
+            color: red;
+        }
+        div[title="r"]{
+            position: absolute;
+            font-size: 140px;
+            top: 240px;
+            left: 25%;
+            color: red;
+        }
+        div[title="r reverse"]{
+            position: absolute;
+            font-size: 140px;
+            top: 250px;
+            right: 25%;
+            color: red;
+            transform: rotate(180deg)
+           
+        }
+        div[title="no_ reverse"]{
+            font-family: "Lora-Bold";
+            position: absolute;
+            top: 530px;
+            left: 4%;
+            width: 150px;
+            height: 100px;
+            color: red;
+        }
+        div[title="no_ reverse"]
+        p:first-child{
+            position: absolute;
+            font-size: 140px;
+            color: red;
+            transform: rotate(180deg)
+            
+        } 
+        div[title="no_ reverse"]
+        p:last-child{
+            position: absolute;
+            font-size: 40px;
+            right: 0px;
+            top: 100px;
+            color: red;
+            transform: rotate(180deg)
+            
+        }
+        div[title="o center"]{
+            position: absolute;
+            font-size: 300px;
+            top: 210px;
+            left: 41%;
+            color: red;
+        }
+        div[title="vol_ reverse"]{
+         font-family: "Lora-Bold";
+            position: absolute;
+            width: 150px;
+            height:100px;
+            right: 4%;
+            top: 530px;
+            color: red;
+        }    
+        div[title="vol_ reverse"]
+        p:first-child{
+            position: absolute;
+            font-size: 30px;
+            top: 100px;
+            color: red;
+            transform: rotate(180deg)
+           
+        }
+        div[title="vol_ reverse"]
+        p:last-child{
+            position: absolute;
+            font-size: 140px;
+            top: 0px;
+            right: 0;
+            color: red;
+            transform: rotate(180deg)
+            
+        }
+        div[title="o reverse"]{
+            position: absolute;
+            font-size: 140px;
+            top: 620px;
+            left: 25%;
+            color: red;
+            transform: rotate(180deg)
+            
+                
+        }
+        div[title="o"]{
+            position: absolute;
+            font-size: 140px;
+            top: 620px;
+            right: 25%;
+            color: red;
+        }
+        div[title="m reverse"]{
+            position: absolute;
+            font-size: 200px;
+            top: 710px;
+            left: 5%;
+            transform: rotate(180deg);
+            color: red;
+        }
+        
+        div[title="no_"]{
+            font-family: "Lora-Bold";
+            position: absolute;
+            width: 120px;
+            height:100px;
+            left: 45%;
+            top: 850px;
+            color: red;
+        }    
+        div[title="no_"]
+        p:first-child{
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            color: red;
+            
+        }
+        div[title="no_"]
+        p:last-child{
+            position: absolute;
+            font-size: 140px;
+            top: 0px;
+            right: 0;
+            color: red;
+        }
+        
+        div[title="m"]{
+            position: absolute;
+            font-size: 200px;
+            top: 710px;
+            right: 5%;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div title="b">B</div>
+    <div title="vol_">
+        <p>VOL.</p>
+        <p>6</p>
+    </div>
+    <div title="b reverse">B</div>
+    <div title="r">R</div>
+    <div title="r reverse">R</div>
+    <div title="no_ reverse">
+        <p>1</p>
+        <p>NO.</p>
+    </div>
+    <div title="o center">O</div>
+    <div title="vol_ reverse">
+        <p>VOL.</p>
+        <p>6</p>
+    </div>
+    <div title="o reverse">O</div>
+    <div title="o">O</div>
+    <div title="m reverse">M</div>
+    <div title="no_">
+        <p>NO.</p>
+        <p>1</p>
+    </div>
+    <div title="m">M</div>
+    
+</body></html>
